@@ -10,6 +10,32 @@ with every agreed trade recorded on a Proof-of-Stake blockchain with 10+ validat
 > (`gridshare/stubs/`), so the whole pipeline already runs end to end. When the
 > real modules are added they are used automatically. See `INTEGRATION.md`.
 
+## Where to write your code (team)
+
+Create your module **directly in `gridshare/`**, with exactly this name:
+
+| Member | File(s) to create |
+|---|---|
+| Member 1 | `gridshare/prosumer.py`, `gridshare/decision.py` |
+| Member 2 | `gridshare/trading.py` |
+| Member 3 | `gridshare/regulator.py`, `gridshare/metrics.py`, `gridshare/charts.py` |
+
+The quickest start: copy the matching file from `gridshare/stubs/`
+(e.g. `stubs/trading_stub.py` → `gridshare/trading.py`), keep the function
+signature, and replace the logic with yours. The simulator then uses your file
+automatically instead of the stub; check the "modules used" line printed by
+`python run_demo.py --quiet`.
+
+**Fix the imports in the copied file.** The file moves up one folder, so the
+relative imports lose one dot:
+
+    from ..contract import ...   →   from .contract import ...
+
+If you forget, the run stops immediately with an `ImportError`.
+
+Do not edit `gridshare/stubs/`. Read `INTEGRATION.md` for the rules your output
+must satisfy.
+
 ## 1. Setup
 
 Requires Python 3.9 or newer.
