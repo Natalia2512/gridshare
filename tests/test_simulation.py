@@ -94,7 +94,7 @@ def test_broken_module_is_caught_by_contract(monkeypatch):
 def test_demo_cli(tmp_path):
     sys.path.insert(0, ROOT)
     import run_demo
-    rc = run_demo.main(["--scenario", "all", "--quiet", "--no-charts", "--out", str(tmp_path)])
+    rc = run_demo.main(["--scenario", "all", "--quiet", "--no-charts", "--no-open", "--out", str(tmp_path)])
     assert rc == 0
     assert (tmp_path / "comparison.csv").exists()
     assert (tmp_path / "adaptive" / "ledger.json").exists()
@@ -106,12 +106,12 @@ def test_demo_cli_rejects_bad_arguments(args, tmp_path):
     sys.path.insert(0, ROOT)
     import run_demo
     with pytest.raises(SystemExit) as e:
-        run_demo.main(args + ["--quiet", "--no-charts", "--out", str(tmp_path)])
+        run_demo.main(args + ["--quiet", "--no-charts", "--no-open", "--out", str(tmp_path)])
     assert e.value.code == 2
 
 
 def test_demo_cli_quorum_failure_is_clean(tmp_path, capsys):
     sys.path.insert(0, ROOT)
     import run_demo
-    rc = run_demo.main(["--faulty-validators", "8", "--quiet", "--no-charts", "--out", str(tmp_path)])
+    rc = run_demo.main(["--faulty-validators", "8", "--quiet", "--no-charts", "--no-open", "--out", str(tmp_path)])
     assert rc == 2 and "quorum" in capsys.readouterr().err

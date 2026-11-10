@@ -7,17 +7,26 @@ Examples
     python run_demo.py --scenario baseline --steps 48 --seed 7
     python run_demo.py --use-stubs              # ignore real modules, use stubs only
     python run_demo.py --faulty-validators 2    # robustness: 2 validators refuse to sign
+    python run_demo.py --no-open                # write results/report.html without opening it
+
+At the end of every run an HTML report (results/report.html) is written and
+opened in the browser (not on CI servers).
 """
 from __future__ import annotations
 
 import argparse
 import csv
 import os
+import shlex
+import subprocess
 import sys
 import time
 import traceback
+import webbrowser
+from pathlib import Path
 
 from gridshare.contract import ContractError
+from gridshare.report import build_report
 from gridshare.simulation import (SCENARIOS, config_for, make_charts, run_simulation,
                                   summarise, write_outputs)
 
@@ -37,6 +46,8 @@ def main(argv=None) -> int:
     ap.add_argument("--no-charts", action="store_true")
     ap.add_argument("--quiet", action="store_true", help="do not print every step")
     ap.add_argument("--debug", action="store_true", help="show full Python tracebacks on errors")
+    ap.add_argument("--no-report", action="store_true", help="do not write results/report.html")
+    ap.add_argument("--no-open", action="store_true", help="write the report but do not open the browser")
     args = ap.parse_args(argv)
     if args.steps < 24:
         ap.error("--steps must be at least 24 (course requirement)")
@@ -66,7 +77,10 @@ def main(argv=None) -> int:
 def run(args) -> int:
 
     scenarios = list(SCENARIOS) if args.scenario == "all" else [args.scenario]
-    all_metrics, summaries, failed = {}, [], False
+    all_metrics, summaries, entries, failed = {}, [], [], False
+    report_path = os.path.join(args.out, "report.html")
+    if os.path.exists(report_path):
+        os.remove(report_path)   # never leave a previous run's report behind if this run crashes
     t0 = time.time()
     for scen in scenarios:
         cfg = config_for(scen, n_steps=args.steps, n_prosumers=args.prosumers, seed=args.seed,
@@ -85,6 +99,7 @@ def run(args) -> int:
         all_metrics[scen] = res.metrics
 
         ok_t, errs_t, what_t = res.ledger.tamper_demo()
+        entries.append({"summary": s, "result": res, "tamper": (ok_t, errs_t, what_t)})
         print(f"\nblockchain: {s['n_blocks']} blocks, {s['n_transactions_on_chain']} transactions, "
               f"valid={res.chain_valid}, every agreed trade on chain={res.all_trades_on_chain}")
         print(f"tamper test: {what_t} -> chain valid={ok_t} "
@@ -97,7 +112,7 @@ def run(args) -> int:
               f"({s['tradable_kwh']:.1f} kWh); grid import {s['grid_import_kwh']:.1f} kWh; "
               f"energy cost {s['community_cost_eur']:.2f} EUR, regulator bonus {s['regulator_bonus_eur']:.2f} EUR")
         print("results ->", os.path.dirname(paths["summary"]))
-        if not (res.chain_valid and res.all_trades_on_chain and res.energy_balance_ok) or (ok_t and res.transactions):
+        if not (res.chain_valid and res.all_trades_on_chain and res.energy_balance_ok) or (ok_t and res.ledger.chain):
             failed = True
 
     if len(summaries) > 1:
@@ -119,12 +134,30 @@ def run(args) -> int:
               "changes HOW energy is traded (P2P vs aggregator), not how much is imported.")
         print("comparison ->", comp)
 
+    charts = []
     if not args.no_charts:
         charts = make_charts(all_metrics, os.path.join(args.out, "charts"), args.use_stubs)
         print("charts ->", ", ".join(charts) if charts else "matplotlib not installed, charts skipped")
+    if not args.no_report:
+        cmd = "python run_demo.py " + quote_args(sys.argv[1:]) if argv_is_cli() else ""
+        report = build_report(entries, charts, report_path, command=cmd, all_passed=not failed)
+        print("report ->", report)
+        if not args.no_open and not os.environ.get("CI"):
+            try:
+                webbrowser.open(Path(report).resolve().as_uri())
+            except Exception:  # no browser available: the file is still there
+                pass
     print(LINE)
     print(f"done in {time.time() - t0:.1f} s - {'ALL CHECKS PASSED' if not failed else 'SOME CHECKS FAILED'}")
     return 1 if failed else 0
+
+
+def quote_args(args) -> str:
+    return subprocess.list2cmdline(args) if os.name == "nt" else shlex.join(args)
+
+
+def argv_is_cli() -> bool:
+    return bool(sys.argv) and os.path.basename(sys.argv[0]) == "run_demo.py"
 
 
 if __name__ == "__main__":

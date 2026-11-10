@@ -38,7 +38,7 @@ must satisfy.
 
 ## 1. Setup
 
-Requires Python 3.9 or newer.
+Requires Python 3.9 or newer (CI tests 3.11 and 3.13; ArcGIS Pro's Python also works).
 
 ```bash
 python -m venv .venv
@@ -60,6 +60,7 @@ python run_demo.py --scenario all         # baseline, fixed, adaptive, pv_shorta
 python run_demo.py --scenario baseline --steps 48 --seed 7
 python run_demo.py --faulty-validators 2  # 2 of 10 validators refuse to sign: blocks still exceed the 2/3 quorum
 python run_demo.py --use-stubs            # ignore real modules, run stubs only
+python run_demo.py --no-open              # write the HTML report without opening the browser
 python run_demo.py --help
 ```
 
@@ -73,6 +74,7 @@ Outputs go to `results/<scenario>/`:
 | `summary.json` | totals, checks, which modules were real or stubs |
 | `../comparison.csv` | one row per scenario (with `--scenario all`) |
 | `../charts/*.png` | comparison charts |
+| `../report.html` | **the HTML report** (see below) |
 
 At the end of each scenario the demo prints the automatic checks: chain valid,
 every agreed trade on chain, tamper test (one recorded trade is modified in a
@@ -82,15 +84,23 @@ energy that *could* be traded between neighbours (min of total surplus and total
 deficit) that actually *was* traded P2P. Wrong arguments (fewer than 24 steps,
 fewer than 10 validators, ...) stop with a short error message.
 
+**HTML report.** At the end of every run `<out>/report.html` (default `results/report.html`) is written and
+opened in the browser. It is a single self-contained file (charts embedded, no
+internet needed) with: overall verdict, scenario comparison table, the automatic
+checks per scenario, all charts, hour-by-hour tables, and the blockchain
+(validators, stakes, last blocks, signatures). Use it during the presentation,
+and keep a copy as a backup of the live demo. `--no-open` writes it without
+opening the browser, `--no-report` skips it. On CI servers it is never opened.
+
 ## 3. Tests
 
 ```bash
 pytest -q
 ```
 
-67 tests: blockchain (validators, hashing, signatures, quorum, proposer and stake
+76 tests: blockchain (validators, hashing, signatures, quorum, proposer and stake
 history, tampering, truncation, malformed/NaN/invalid/double-spent trades),
-interface contract, stubs, CLI, and full 24-step runs of all scenarios.
+interface contract, stubs, CLI, HTML report, and full 24-step runs of all scenarios.
 GitHub Actions (`.github/workflows/ci.yml`) runs the tests and the full
 simulation on every push and pull request, on Linux and Windows.
 
@@ -110,6 +120,7 @@ gridshare/
   contract.py      shared data types + validation (frozen interface, all members)
   blockchain.py    Member 4 – PoS ledger
   simulation.py    Member 4 – 24-step controller, scenario configs, output writer
+  report.py        Member 4 – self-contained HTML report
   fixtures.py      loaders for example_inputs/ and example_outputs/
   stubs/           temporary stand-ins for Members 1-3
 run_demo.py        Member 4 – CLI / live demo
