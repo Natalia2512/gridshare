@@ -1,0 +1,934 @@
+{
+ "index": 12,
+ "step": 12,
+ "prev_hash": "5b006f58e144fc32070547dfeb18dbe348e2117bd55ad84b489e7635226eec3f",
+ "transactions": [
+  {
+   "transaction_id": "T012-P0001",
+   "step": 12,
+   "buyer_id": "P051",
+   "seller_id": "P042",
+   "quantity_kwh": 0.361,
+   "price_eur_per_kwh": 0.1348,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0002",
+   "step": 12,
+   "buyer_id": "P069",
+   "seller_id": "P042",
+   "quantity_kwh": 0.342,
+   "price_eur_per_kwh": 0.1338,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0003",
+   "step": 12,
+   "buyer_id": "P072",
+   "seller_id": "P042",
+   "quantity_kwh": 0.325,
+   "price_eur_per_kwh": 0.1338,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0004",
+   "step": 12,
+   "buyer_id": "P099",
+   "seller_id": "P042",
+   "quantity_kwh": 0.385,
+   "price_eur_per_kwh": 0.1338,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0005",
+   "step": 12,
+   "buyer_id": "P057",
+   "seller_id": "P042",
+   "quantity_kwh": 0.389,
+   "price_eur_per_kwh": 0.1336,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0006",
+   "step": 12,
+   "buyer_id": "P093",
+   "seller_id": "P042",
+   "quantity_kwh": 0.32,
+   "price_eur_per_kwh": 0.1321,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0007",
+   "step": 12,
+   "buyer_id": "P090",
+   "seller_id": "P042",
+   "quantity_kwh": 0.306,
+   "price_eur_per_kwh": 0.1315,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0008",
+   "step": 12,
+   "buyer_id": "P006",
+   "seller_id": "P042",
+   "quantity_kwh": 0.425,
+   "price_eur_per_kwh": 0.1312,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0009",
+   "step": 12,
+   "buyer_id": "P073",
+   "seller_id": "P042",
+   "quantity_kwh": 0.0962,
+   "price_eur_per_kwh": 0.1231,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0010",
+   "step": 12,
+   "buyer_id": "P073",
+   "seller_id": "P084",
+   "quantity_kwh": 0.1878,
+   "price_eur_per_kwh": 0.1234,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0011",
+   "step": 12,
+   "buyer_id": "P034",
+   "seller_id": "P084",
+   "quantity_kwh": 0.458,
+   "price_eur_per_kwh": 0.1231,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0012",
+   "step": 12,
+   "buyer_id": "P019",
+   "seller_id": "P084",
+   "quantity_kwh": 0.469,
+   "price_eur_per_kwh": 0.123,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0013",
+   "step": 12,
+   "buyer_id": "P088",
+   "seller_id": "P084",
+   "quantity_kwh": 0.466,
+   "price_eur_per_kwh": 0.1229,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0014",
+   "step": 12,
+   "buyer_id": "P082",
+   "seller_id": "P084",
+   "quantity_kwh": 0.449,
+   "price_eur_per_kwh": 0.1222,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0015",
+   "step": 12,
+   "buyer_id": "P040",
+   "seller_id": "P084",
+   "quantity_kwh": 0.412,
+   "price_eur_per_kwh": 0.1219,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0016",
+   "step": 12,
+   "buyer_id": "P070",
+   "seller_id": "P084",
+   "quantity_kwh": 0.426,
+   "price_eur_per_kwh": 0.1216,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0017",
+   "step": 12,
+   "buyer_id": "P067",
+   "seller_id": "P084",
+   "quantity_kwh": 0.499,
+   "price_eur_per_kwh": 0.1202,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0018",
+   "step": 12,
+   "buyer_id": "P053",
+   "seller_id": "P084",
+   "quantity_kwh": 0.482,
+   "price_eur_per_kwh": 0.1163,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0019",
+   "step": 12,
+   "buyer_id": "P023",
+   "seller_id": "P084",
+   "quantity_kwh": 0.1876,
+   "price_eur_per_kwh": 0.1153,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0020",
+   "step": 12,
+   "buyer_id": "P023",
+   "seller_id": "P066",
+   "quantity_kwh": 0.1894,
+   "price_eur_per_kwh": 0.1154,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0021",
+   "step": 12,
+   "buyer_id": "P080",
+   "seller_id": "P066",
+   "quantity_kwh": 0.386,
+   "price_eur_per_kwh": 0.115,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0022",
+   "step": 12,
+   "buyer_id": "P071",
+   "seller_id": "P066",
+   "quantity_kwh": 0.413,
+   "price_eur_per_kwh": 0.1149,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0023",
+   "step": 12,
+   "buyer_id": "P029",
+   "seller_id": "P066",
+   "quantity_kwh": 0.469,
+   "price_eur_per_kwh": 0.1149,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0024",
+   "step": 12,
+   "buyer_id": "P038",
+   "seller_id": "P066",
+   "quantity_kwh": 0.356,
+   "price_eur_per_kwh": 0.1144,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0025",
+   "step": 12,
+   "buyer_id": "P083",
+   "seller_id": "P066",
+   "quantity_kwh": 0.303,
+   "price_eur_per_kwh": 0.1139,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-P0026",
+   "step": 12,
+   "buyer_id": "P086",
+   "seller_id": "P066",
+   "quantity_kwh": 0.453,
+   "price_eur_per_kwh": 0.1135,
+   "market_type": "P2P"
+  },
+  {
+   "transaction_id": "T012-L0001",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P001",
+   "quantity_kwh": 2.2384,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0002",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P002",
+   "quantity_kwh": 3.4936,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0003",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P003",
+   "quantity_kwh": 2.3397,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0004",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P004",
+   "quantity_kwh": 2.597,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0005",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P005",
+   "quantity_kwh": 3.6758,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0006",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P007",
+   "quantity_kwh": 4.3542,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0007",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P008",
+   "quantity_kwh": 4.4905,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0008",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P009",
+   "quantity_kwh": 3.5615,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0009",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P010",
+   "quantity_kwh": 4.2615,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0010",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P011",
+   "quantity_kwh": 3.7744,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0011",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P012",
+   "quantity_kwh": 2.5306,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0012",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P013",
+   "quantity_kwh": 3.663,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0013",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P014",
+   "quantity_kwh": 2.6764,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0014",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P015",
+   "quantity_kwh": 2.6306,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0015",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P016",
+   "quantity_kwh": 4.8158,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0016",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P017",
+   "quantity_kwh": 3.9067,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0017",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P018",
+   "quantity_kwh": 3.0509,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0018",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P020",
+   "quantity_kwh": 3.0455,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0019",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P021",
+   "quantity_kwh": 2.9434,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0020",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P022",
+   "quantity_kwh": 4.1753,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0021",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P024",
+   "quantity_kwh": 2.5653,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0022",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P025",
+   "quantity_kwh": 2.2518,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0023",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P026",
+   "quantity_kwh": 4.8028,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0024",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P027",
+   "quantity_kwh": 4.108,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0025",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P028",
+   "quantity_kwh": 2.3665,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0026",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P030",
+   "quantity_kwh": 2.5529,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0027",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P031",
+   "quantity_kwh": 3.4767,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0028",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P032",
+   "quantity_kwh": 3.3568,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0029",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P033",
+   "quantity_kwh": 2.8182,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0030",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P035",
+   "quantity_kwh": 4.2543,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0031",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P036",
+   "quantity_kwh": 2.2358,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0032",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P037",
+   "quantity_kwh": 3.2293,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0033",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P039",
+   "quantity_kwh": 4.2868,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0034",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P041",
+   "quantity_kwh": 2.588,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0035",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P043",
+   "quantity_kwh": 2.3824,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0036",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P044",
+   "quantity_kwh": 2.7081,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0037",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P045",
+   "quantity_kwh": 4.4601,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0038",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P046",
+   "quantity_kwh": 4.0713,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0039",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P047",
+   "quantity_kwh": 3.2188,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0040",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P048",
+   "quantity_kwh": 4.5667,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0041",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P049",
+   "quantity_kwh": 4.0346,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0042",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P050",
+   "quantity_kwh": 3.0352,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0043",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P052",
+   "quantity_kwh": 2.317,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0044",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P054",
+   "quantity_kwh": 3.5755,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0045",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P055",
+   "quantity_kwh": 3.1807,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0046",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P056",
+   "quantity_kwh": 3.1344,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0047",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P058",
+   "quantity_kwh": 2.7998,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0048",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P059",
+   "quantity_kwh": 4.013,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0049",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P060",
+   "quantity_kwh": 4.7198,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0050",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P061",
+   "quantity_kwh": 2.5766,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0051",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P062",
+   "quantity_kwh": 2.4031,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0052",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P063",
+   "quantity_kwh": 3.4087,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0053",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P064",
+   "quantity_kwh": 4.6369,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0054",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P065",
+   "quantity_kwh": 3.2614,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0055",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P066",
+   "quantity_kwh": 1.3236,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0056",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P068",
+   "quantity_kwh": 2.5105,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0057",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P074",
+   "quantity_kwh": 3.585,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0058",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P075",
+   "quantity_kwh": 2.4405,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0059",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P076",
+   "quantity_kwh": 4.5402,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0060",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P077",
+   "quantity_kwh": 3.0224,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0061",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P078",
+   "quantity_kwh": 2.6323,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0062",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P079",
+   "quantity_kwh": 2.2083,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0063",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P081",
+   "quantity_kwh": 2.5653,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0064",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P085",
+   "quantity_kwh": 2.6297,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0065",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P087",
+   "quantity_kwh": 4.0494,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0066",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P089",
+   "quantity_kwh": 4.4218,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0067",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P091",
+   "quantity_kwh": 2.7369,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0068",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P092",
+   "quantity_kwh": 2.6451,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0069",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P094",
+   "quantity_kwh": 4.9232,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0070",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P095",
+   "quantity_kwh": 4.842,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0071",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P096",
+   "quantity_kwh": 2.3247,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0072",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P097",
+   "quantity_kwh": 3.5781,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0073",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P098",
+   "quantity_kwh": 2.6285,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  },
+  {
+   "transaction_id": "T012-L0074",
+   "step": 12,
+   "buyer_id": "AGGREGATOR",
+   "seller_id": "P100",
+   "quantity_kwh": 4.1406,
+   "price_eur_per_kwh": 0.06,
+   "market_type": "LOCAL"
+  }
+ ],
+ "merkle_root": "38369f58036a9129f1396f19dde18ef674b6caaf65d08098ed424c7f311cdb77",
+ "proposer_id": "V09",
+ "stake_snapshot": {
+  "V01": 134.0,
+  "V02": 65.0,
+  "V03": 53.0,
+  "V04": 146.0,
+  "V05": 87.0,
+  "V06": 81.0,
+  "V07": 79.0,
+  "V08": 67.0,
+  "V09": 146.0,
+  "V10": 64.0
+ },
+ "signatures": {
+  "V01": "ad28638440419a2b24c82555030785221d75b09138c6a139c871cfcb28953e92",
+  "V02": "3527f0e9e905bb026a3560c4ac1b36999e4528cbd3e060ec9c2b46fa58e1ed25",
+  "V03": "8a4d0012f6fcb432a875dccd123756816cee7aea89c1faa0d1c1cb5ee9805a38",
+  "V04": "ea9422a54601e2c91addde5e2e4dda5811d3183866437a76422c89934188a3d1",
+  "V05": "54b4a77cbeda1cfdea9e6dfb664a0d67a78c840931fa511662dd515ef6d617ce",
+  "V06": "c584b33fb4622b55ad9d7530cccc610b6e0c51977ad03587384b8a3c710d129a",
+  "V07": "4c2a5aa654ee0a2841d386c9f36c10473d1fc009cbc1fc1441d788a09eaf28fc",
+  "V08": "9d36a4cdaa5efa9c1c8d4005545884def0d04bd71715adf166c014cc5bf30aaf",
+  "V09": "8e41f564addd686f72f4b0fae0c42852aed420f422185636c090afdc87cd3aae",
+  "V10": "451f3c679a43a3daa576d81d8f86d57a71323d78106edeb8c26f025a14ade901"
+ },
+ "block_hash": "2407a1c1042396560bf7e00e518f6ebe089e949bae989d15eec8fe22fe899440"
+}

@@ -1,0 +1,34 @@
+# Runs on every push and pull request: unit + contract tests, then a full
+# 24-step simulation of all scenarios. A red cross = do not merge.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python-version: ["3.9", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Unit, contract and end-to-end tests
+        run: pytest -q
+      - name: Full simulation, all scenarios (real modules where present, stubs otherwise)
+        run: python run_demo.py --scenario all --quiet --out results
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-${{ matrix.os }}-py${{ matrix.python-version }}
+          path: results/
